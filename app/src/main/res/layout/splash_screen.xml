@@ -21,7 +21,7 @@
         android:layout_height="421dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="-50dp"
-        android:src="@drawable/app_logo" />
+        android:src="@drawable/app_logo2" />
 
     <TextView
         android:layout_width="match_parent"

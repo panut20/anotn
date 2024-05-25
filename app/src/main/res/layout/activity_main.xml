@@ -28,6 +28,7 @@
             android:fontFamily="@font/maruburi_bold"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:layout_marginTop="50dp"
             android:text="국내"
             android:textColor="#000000"
             android:textSize="18sp" />
@@ -45,6 +46,7 @@
             android:fontFamily="@font/maruburi_bold"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:layout_marginTop="50dp"
             android:text="해외"
             android:textColor="#000000"
             android:textSize="18sp" />
@@ -58,7 +60,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_below="@id/top_buttons_layout"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true">
 
         <!-- 코스피와 태극기 -->

@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.sb_300420172);
         mediaPlayer.start();
 
-        // 5초 후에 메인 액티비티로 전환
+        // 3초 후에 메인 액티비티로 전환
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -29,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 5000);
+        }, 3000);
     }
 
     @Override
