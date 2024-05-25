@@ -1,0 +1,33 @@
+type Stock {
+    ticker: ID!
+    name: String!
+    price: Int!
+}
+input StringQueryOperatorInput {
+    eq: String
+    ne: String
+    in: String
+    nin: String
+    regex: String
+    glob: String
+}
+
+input StockFilterInput {
+    ticker: StringQueryOperatorInput
+}
+type Query {
+    _entries(representations: [_Any!]!): [_Entity]!
+    _service: _Service
+    stocks(filter: StockFilterInput): [Stock!]!
+    stock(ticker: ID!): Stock
+}
+union _Entity = Stock
+
+scalar _Any
+
+type _Service {
+    sdl: String
+}
+schema {
+    query: Query
+}

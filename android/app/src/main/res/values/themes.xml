@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Android" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="AppTheme.Splash" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Android</item>
+    </style>
+    <style name="Theme.Android" parent="Base.Theme.Android" />
+    <style name="ThemeOverlay.SearchView" parent="">
+        <item name="android:fontFamily">@font/font_elecsafe_reg</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+</resources>

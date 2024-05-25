@@ -1,0 +1,45 @@
+[versions]
+agp = "8.4.1"
+coreSplashscreen = "1.0.1"
+gradle = "8.4.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+lombok = "1.18.32"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+apollographql = "4.0.0-beta.6"
+navigation = "2.7.7"
+navigationFragment = "2.7.7"
+navigationUi = "2.7.7"
+
+[libraries]
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version = "2.8.0" }
+livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version = "2.8.0" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref="navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref="navigation" }
+
+apollo-runtime = { group = "com.apollographql.apollo3", name = "apollo-runtime", version = "4.0.0-beta.6" }
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version = "v3.1.0" }
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+apolloGraphql = { id = "com.apollographql.apollo3", version.ref = "apollographql" }
+

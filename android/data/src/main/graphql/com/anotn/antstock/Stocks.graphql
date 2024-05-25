@@ -1,0 +1,6 @@
+query Stocks {
+    stocks {
+        name
+        ticker
+    }
+}

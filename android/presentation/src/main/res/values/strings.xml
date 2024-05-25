@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">개미스톡</string>
+    <string name="home">HOME</string>
+    <string name="stock">STOCK</string>
+    <string name="news">NEWS</string>
+    <string name="shop">SHOP</string>
+    <string name="my_info">MY</string>
+
+    <string name="buy">매수</string>
+    <string name="sell">매도</string>
+    <string name="search">검색</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stock_exchange_plholder">가격 입력</string>
+</resources>
