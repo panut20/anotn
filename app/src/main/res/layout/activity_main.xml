@@ -6,133 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- 국내 및 해외 버튼 -->
     <LinearLayout
-        android:id="@+id/top_buttons_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/domestic_button"
-            style="@style/CustomButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/button_background2"
-            android:clickable="false"
-            android:focusable="false"
-            android:fontFamily="@font/maruburi_bold"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:layout_marginTop="50dp"
-            android:text="국내"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/international_button"
-            style="@style/CustomButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/button_background3"
-            android:clickable="false"
-            android:focusable="false"
-            android:fontFamily="@font/maruburi_bold"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:layout_marginTop="50dp"
-            android:text="해외"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <!-- 코스피+태극기와 나스닥+성조기를 가로로 배치 -->
-    <LinearLayout
-        android:id="@+id/stock_info_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_below="@id/top_buttons_layout"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true">
+        android:gravity="center_horizontal"
+        android:layout_marginTop="48dp">
 
-        <!-- 코스피와 태극기 -->
+        <!-- 국내 버튼과 관련 정보 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginEnd="50dp">
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="30dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/domestic_button"
+                style="@style/CustomButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="코스피"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:background="@drawable/button_background2"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/maruburi_bold"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="국내"
+                android:textColor="#000000"
+                android:textSize="22sp" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/kor" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="코스피"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/kor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="197dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/border" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="코스닥"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/kor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="197dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/border" />
         </LinearLayout>
 
-        <!-- 나스닥과 성조기 -->
+        <!-- 해외 버튼과 관련 정보 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginStart="50dp">
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="30dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/international_button"
+                style="@style/CustomButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="나스닥"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:background="@drawable/button_background3"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/maruburi_bold"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="해외"
+                android:textColor="#000000"
+                android:textSize="22sp" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/usa" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나스닥"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/usa" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="197dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/border" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닛케이"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/jpn" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="197dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/border" />
         </LinearLayout>
-    </LinearLayout>
-
-    <!-- 흰색 사각형 2개를 가로로 배치 -->
-    <LinearLayout
-        android:id="@+id/white_boxes_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_below="@id/stock_info_layout"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true">
-
-        <!-- 첫 번째 흰색 사각형 -->
-
-        <!-- 두 번째 흰색 사각형 -->
-        <View
-            android:layout_width="100dp"
-            android:layout_height="164dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/border" />
-
-        <View
-            android:layout_width="100dp"
-            android:layout_height="164dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/border" />
     </LinearLayout>
 
     <!-- 하단 버튼들 -->
@@ -142,7 +177,8 @@
         android:orientation="horizontal"
         android:weightSum="4"
         android:layout_alignParentBottom="true"
-        android:padding="10dp">
+        android:padding="0dp"
+        android:layout_margin="0dp">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button1"
@@ -152,6 +188,7 @@
             android:text="홈"
             android:fontFamily="@font/maruburi_bold"
             android:background="@drawable/button_background"
+            android:textSize="16sp"
             style="@style/CustomButtonStyle"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -162,6 +199,7 @@
             android:text="주식 목록"
             android:fontFamily="@font/maruburi_bold"
             android:background="@drawable/button_background"
+            android:textSize="16sp"
             style="@style/CustomButtonStyle"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -172,6 +210,7 @@
             android:text="포트폴리오"
             android:fontFamily="@font/maruburi_bold"
             android:background="@drawable/button_background"
+            android:textSize="16sp"
             style="@style/CustomButtonStyle"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -182,6 +221,7 @@
             android:text="사용자"
             android:fontFamily="@font/maruburi_bold"
             android:background="@drawable/button_background"
+            android:textSize="16sp"
             style="@style/CustomButtonStyle"/>
     </LinearLayout>
 
