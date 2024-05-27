@@ -2,11 +2,11 @@ package com.anotn.antstock.android.presentation.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
@@ -34,7 +34,7 @@ public class MarketAdapter extends RecyclerView.Adapter<MarketAdapter.ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final ConstraintLayout tvContainer;
         private final TextView tvName, tvTicker;
-        private final AppCompatCheckBox stockStar;
+        private final CheckBox stockStar;
 
         private final NavController controller;
         public ViewHolder(@NonNull ItemStockBinding binding, NavController controller) {

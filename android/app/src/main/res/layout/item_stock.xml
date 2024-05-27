@@ -44,7 +44,7 @@
             android:textColor="@color/gray"
             />
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.appcompat.widget.AppCompatCheckBox
+        <CheckBox
             android:id="@+id/stock_star"
             android:maxWidth="48dp"
             android:maxHeight="48dp"

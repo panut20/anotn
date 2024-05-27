@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <objectAnimator
+        android:duration="1000">
+        <propertyValuesHolder
+            android:propertyName="pathData"
+            android:valueFrom="M 75,194 L 87,200 L 87,199 L 75,193 Z"
+            android:valueTo="M 75,194 L 87,200 L 87,105 L 75,110 Z"
+            android:valueType="pathType"
+            />
+    </objectAnimator>
+    <objectAnimator
+        android:duration="1000">
+        <propertyValuesHolder
+            android:propertyName="pathData"
+            android:valueFrom="M 117,215 L 129,221 L 129,220 L 117,214 Z"
+            android:valueTo="M 117,215 L 129,221 L 129,140 L 117,145 Z"
+            android:valueType="pathType"
+            />
+    </objectAnimator>
+    <objectAnimator
+        android:duration="1000">
+        <propertyValuesHolder
+            android:propertyName="pathData"
+            android:valueFrom="M 159,221 L 171,215 L 171,214 L 159,220 Z"
+            android:valueTo="M 159,221 L 171,215 L 171,105 L 159,110 Z"
+            android:valueType="pathType"
+            />
+    </objectAnimator>
+    <objectAnimator
+        android:duration="1000">
+        <propertyValuesHolder
+            android:propertyName="pathData"
+            android:valueFrom="M 201,200 L 213,194 L 213,193 L 201,199 Z"
+            android:valueTo="M 201,200 L 213,194 L 213,115 L 201,120 Z"
+            android:valueType="pathType"
+            />
+    </objectAnimator>
+    <objectAnimator
+        android:duration="1000">
+        <propertyValuesHolder
+            android:propertyName="pathData"
+            android:valueFrom="M 228,186 L 240,180 L 240,179 L 228,185 Z"
+            android:valueTo="M 228,186 L 240,180 L 240,60 L 228,65 Z"
+            android:valueType="pathType"
+            />
+    </objectAnimator>
+</set>

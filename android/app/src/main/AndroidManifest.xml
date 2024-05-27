@@ -5,6 +5,7 @@
 
     </uses-permission>
     <application
+        android:name=".AntStockApplication"
         android:usesCleartextTraffic="true"
         android:enableOnBackInvokedCallback="true"
         android:allowBackup="true"

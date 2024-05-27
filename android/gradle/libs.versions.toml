@@ -14,6 +14,7 @@ apollographql = "4.0.0-beta.6"
 navigation = "2.7.7"
 navigationFragment = "2.7.7"
 navigationUi = "2.7.7"
+kakao = "2.20.1"
 
 [libraries]
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
@@ -26,6 +27,8 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+kakao-cert = { module = "com.kakao.sdk:v2-cert", version.ref = "kakao" }
+kakao-user = { module = "com.kakao.sdk:v2-user", version.ref = "kakao" }
 viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version = "2.8.0" }
 livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version = "2.8.0" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref="navigation" }

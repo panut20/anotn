@@ -35,6 +35,9 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.apollo.runtime)
+    implementation(libs.kakao.user)
+    implementation(libs.kakao.cert)
+
     implementation(project(":domain"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
