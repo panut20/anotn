@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,16 +18,16 @@ import com.anotn.antstock.android.presentation.ui.adapter.MarketAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link StockFragment#newInstance} factory method to
+ * Use the {@link MarketFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class StockFragment extends Fragment {
+public class MarketFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     // TODO: Rename and change types of parameters
 
-    public StockFragment() {
+    public MarketFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +38,8 @@ public class StockFragment extends Fragment {
      * @return A new instance of fragment StockFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static StockFragment newInstance() {
-        StockFragment fragment = new StockFragment();
+    public static MarketFragment newInstance() {
+        MarketFragment fragment = new MarketFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;

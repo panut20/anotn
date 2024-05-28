@@ -4,7 +4,6 @@ import com.antstock.android.domain.entity.Stock;
 import com.antstock.android.domain.entity.StockInfo;
 import com.antstock.android.domain.port.out.StockClientPort;
 import com.apollographql.apollo3.ApolloClient;
-import com.apollographql.apollo3.api.Query;
 
 import java.util.List;
 

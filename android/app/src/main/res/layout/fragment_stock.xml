@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.anotn.antstock.android.presentation.ui.fragment.stock.StockFragment"
+    tools:context="com.anotn.antstock.android.presentation.ui.fragment.stock.MarketFragment"
     android:background="#ffffff">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,7 +15,6 @@
             android:id="@+id/search_view"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:textSize="20sp"
             android:theme="@style/ThemeOverlay.SearchView"
             app:searchIcon="@drawable/ic_search_36"
             app:iconifiedByDefault="false"

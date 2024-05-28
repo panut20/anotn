@@ -1,7 +1,6 @@
 package com.anotn.antstock.android.presentation.ui.fragment.stock;
 
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 

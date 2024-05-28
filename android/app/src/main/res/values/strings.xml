@@ -10,9 +10,16 @@
     <string name="stock_ticker">종목코드</string>
     <string name="buy">매수</string>
     <string name="sell">매도</string>
+    <string name="price">가격</string>
+    <string name="stock_exchange">거래소</string>
+
+    <string name="finish_dialog">앱을 종료하시겠습니까?</string>
+    <string name="finish_dialog_yes">예, 종료합니다</string>
+    <string name="finish_dialog_no">아니요, 아직입니다</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="search">검색</string>
     <string name="search_stock">종목 검색</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="stock_exchange_plholder">가격 입력</string>
 </resources>

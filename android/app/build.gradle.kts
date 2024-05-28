@@ -46,6 +46,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    implementation(libs.kotlinx.coroutines.android)
+
     implementation(libs.androidx.core.splashscreen)
 
     implementation(libs.androidx.navigation.fragment)

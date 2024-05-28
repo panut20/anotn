@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.anotn.antstock.android.presentation.ui.fragment.home.HomeFragment"
-    android:background="#ff7777">
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,6 +21,59 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:hint="@string/search"/>
+            app:defaultQueryHint="@string/search"
+            android:gravity="center_vertical"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_view"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            android:columnCount="2"
+            >
+            <TextView
+                android:theme="@style/ThemeOverlay.TextView.Bold"
+                android:text="@string/stock_ticker"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:theme="@style/ThemeOverlay.TextView.Bold"
+                android:text="@string/stock_ticker"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:theme="@style/ThemeOverlay.TextView.Bold"
+                android:text="@string/stock_ticker"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:theme="@style/ThemeOverlay.TextView.Bold"
+                android:text="@string/stock_ticker"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+        </GridLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -7,8 +7,10 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.anotn.antstock.android.databinding.FragmentChartBinding;
+import com.anotn.antstock.android.presentation.ui.adapter.StockDetailAdapter;
 
 public class ChartFragment extends Fragment {
 
@@ -35,10 +37,11 @@ public class ChartFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentChartBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
-        MyLineChart chart = new MyLineChart(getContext());
         binding.stockName.setText("삼성전자");
         binding.stockTicker.setText("005930");
-        chart.setData(binding.lineChart);
+        StockDetailAdapter adapter = new StockDetailAdapter();
+        binding.stockDetailContainer.setAdapter(adapter);
+        binding.stockDetailContainer.setLayoutManager(new LinearLayoutManager(getContext()));
         return view;
     }
 

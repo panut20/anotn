@@ -9,5 +9,13 @@
     <color name="cyan">#FF00FFFF</color>
     <color name="magenta">#FFFF00FF</color>
     <color name="gray">#FF808080</color>
-    <color name="moneygreen">#1CB856</color>
+    <color name="moneygreen">#FF1CB856</color>
+    <color name="moneygreen_pressed">#FF116C33</color>
+    <color name="aquamarine">#FF00F0B5</color>
+    <color name="aquamarine_pressed">#FF008066</color>
+    <color name="snow">#FFFFFBFE</color>
+    <color name="space_cadet">#FF3B3335</color>
+    <color name="space_cadet_pressed">#FF272223</color>
+    <color name="ultra_violet">#FF5D5D81</color>
+    <color name="ultra_violet_pressed">#FF474766</color>
 </resources>

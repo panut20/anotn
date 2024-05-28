@@ -19,6 +19,7 @@ public class MyLineChart extends LineChart {
 
         // Zoom In / Out 가능 여부 설정
         lineChart.setScaleEnabled(false);
+        lineChart.setDrawGridBackground(false);
 
          List<Entry> entryList = new ArrayList<Entry>();
         String title = "현재가";
