@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_logo"
+    >
+    <target
+        android:animation="@anim/first_bar"
+        android:name="first"/>
+    <target
+        android:animation="@anim/second_bar"
+        android:name="second"/>
+    <target
+        android:animation="@anim/third_bar"
+        android:name="third"/>
+    <target
+        android:animation="@anim/fourth_bar"
+        android:name="fourth"/>
+    <target
+        android:animation="@anim/fifth_bar"
+        android:name="fifth"/>
+
+</animated-vector>

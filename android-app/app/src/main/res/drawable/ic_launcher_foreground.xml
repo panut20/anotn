@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="324"
+    android:viewportHeight="324">
+  <group android:name="body"
+      android:translateX="16"
+      android:translateY="16"
+      >
+    <path
+        android:name="bodyOuter"
+        android:pathData="M 78.18,182 L 78.18,106 L 144,68 L 209.82,106 L 209.82,182 L 144,220 Z"
+        android:fillColor="#000000"
+        />
+    <path
+        android:name="bodyInner"
+        android:pathData="M 90.18,175.07 L 90.18,112.93 L 144,81.85 L 197.82,112.93 L 197.82,175.07 L 144,206.15 Z"
+        android:fillColor="#FFFFFF"
+        />
+    <group android:name="barGroup">
+      <path
+          android:name="first"
+          android:pathData="M 102.11,181.96 L 114.11,188.89 L 114.11,105 L 102.11,110 Z"
+          android:fillColor="#FF0000"
+          />
+      <path
+          android:name="second"
+          android:pathData="M 126.04,195.78 L 138.04,202.7 L 138.04,140 L 126.04,145 Z"
+          android:fillColor="#0000FF"
+          />
+      <path
+          android:name="third"
+          android:pathData="M 149.97,202.7 L 161.97,196.77 L 161.97,105 L 149.97,110 Z"
+          android:fillColor="#FF0000"
+          />
+      <path
+          android:name="fourth"
+          android:pathData="M 173.89,188.89 L 185.89,181.96 L 185.89,115 L 173.89,120 Z"
+          android:fillColor="#0000FF"
+          />
+      <path
+          android:name="fifth"
+          android:pathData="M 197.82,175.07 L 209.82,168.15 L 209.82,70 L 197.82,75 Z"
+          android:fillColor="#FF0000"
+          />
+    </group>
+  </group>
+</vector>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <vector
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="192"
+            android:viewportHeight="192">
+            <group android:name="more"
+                android:translateX="-48"
+                android:translateY="-48">
+                <path android:name="top_bar"
+                    android:pathData="M 76.12,76.12 L 211.88,76.12 L 211.88,96.12 L 75.12,96.12 Z"
+                    android:fillColor="#63D2FF"/>
+                <path android:name="middle_bar"
+                    android:pathData="M 76.12,134 L 211.88,134 L 211.88,154 L 75.12,154 Z"
+                    android:fillColor="#63D2FF"/>
+                <path android:name="bottom_bar"
+                    android:pathData="M 76.12,192 L 211.88,192 L 211.88,212 L 75.12,212 Z"
+                    android:fillColor="#63D2FF"/>
+            </group>
+        </vector>
+    </item>
+    <item android:state_checked="false">
+        <vector
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="192"
+            android:viewportHeight="192">
+            <group android:name="more"
+                android:translateX="-48"
+                android:translateY="-48">
+                <path android:name="top_bar"
+                    android:pathData="M 76.12,76.12 L 211.88,76.12 L 211.88,96.12 L 75.12,96.12 Z"
+                    android:fillColor="@color/black"/>
+                <path android:name="middle_bar"
+                    android:pathData="M 76.12,134 L 211.88,134 L 211.88,154 L 75.12,154 Z"
+                    android:fillColor="@color/black"/>
+                <path android:name="bottom_bar"
+                    android:pathData="M 76.12,192 L 211.88,192 L 211.88,212 L 75.12,212 Z"
+                    android:fillColor="@color/black"/>
+            </group>
+        </vector>
+    </item>
+</selector>
